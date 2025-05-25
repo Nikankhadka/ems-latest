@@ -22,6 +22,7 @@ export default function CheckInPage() {
       ticketType: 'VIP',
       status: 'checked-in',
       checkInTime: '2024-03-15 09:00 AM',
+      eventId: '1'
     },
     {
       id: '2',
@@ -30,6 +31,7 @@ export default function CheckInPage() {
       ticketType: 'Regular',
       status: 'not-checked-in',
       checkInTime: null,
+      eventId: '2'
     },
   ];
 
