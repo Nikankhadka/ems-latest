@@ -11,8 +11,8 @@ export default function DashboardPage() {
   // This would typically come from your auth context/state
   const userRole: UserRole = 'organizer'; // For demo purposes, we'll use 'organizer', 'attendee', or 'admin'
 
-  const renderDashboard = () => {
-    switch (userRole) {
+  const renderDashboard = (role: UserRole) => {
+    switch (role) {
       case 'organizer':
         return <OrganizerDashboard />;
       case 'attendee':
@@ -33,7 +33,7 @@ export default function DashboardPage() {
             Welcome to your {userRole} dashboard
           </p>
         </div>
-        {renderDashboard()}
+        {renderDashboard(userRole)}
       </div>
     </div>
   );
